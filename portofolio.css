@@ -1,0 +1,434 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #000000;
+    background-color: #9cd6fa;
+}
+
+/* HEADER */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 50px;
+    background-color: #3885a3;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+/* LOGO AREA */
+header .logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .logo img {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+}
+
+header .logo h2 {
+    font-size: 32px; /* lebih proporsional, tidak kebesaran */
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+}
+
+/* NAVBAR */
+header nav ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    gap: 25px;     /* jarak lebih rapi */
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 500;
+    font-size: 16px;
+    transition: 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffffff;
+    text-shadow: 0 0 5px rgba(255,255,255,0.5);
+}
+
+
+/* HERO */
+.Home {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+    background-color: #e0f7fa;
+
+}
+
+.Home h1 {
+    font-size: 40px;
+    margin: 20px 0;
+}
+
+.Home h2 {
+    font-size: 20px;
+    color: #6b7088;
+    max-width: 600px;
+
+}
+
+.Home p {
+    margin-top: 20px;
+    font-size: 16px;
+    max-width: 600px;
+    text-align: justify;
+}
+
+/* SECTION */
+section {
+    padding: 80px 50px;
+}
+
+section h2 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-size: 28px;
+    color: #0077cc;
+}
+
+/* ABOUT */
+.About {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 15vh;
+}
+
+.About h2 {
+    background-color: #005fa3;
+    margin: 50px;
+    color: #ffffff;
+}
+
+.About img {
+    border-radius: 10px;
+}
+
+.About p {
+    max-width: 500px;
+    font-size: 16px;
+    line-height: 1.6;
+    color: #444;
+}
+
+.About a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #0077cc;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.About a:hover {
+    background-color: #005fa3;
+}
+
+/* AREA SKILLS UTAMA */
+.Skills {
+    padding: 40px 0;
+    text-align: center;
+}
+
+/* TITLE SKILLS */
+.Skills h2 {
+    background-color: #005fa3;
+    color: #ffffff;
+    display: inline-block;
+    padding: 10px 40px;
+    border-radius: 4px;
+    margin-bottom: 40px;
+}
+
+/* WRAPPER SEMUA CARD */
+.Skills > div > div {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 35px;
+    padding: 0 20px;
+}
+
+/* CARD */
+.Skills > div > div > div {
+    background-color: #ffffff;
+    width: 220px;
+    padding: 35px 20px;
+    border-radius: 15px;
+    text-align: center;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.12);
+    transition: transform 0.3s ease;
+}
+
+/* HOVER CARD */
+.Skills > div > div > div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 15px 35px rgba(0,0,0,0.18);
+}
+
+/* GAMBAR DI DALAM CARD */
+.Skills > div > div > div img {
+    display: block;
+    margin: 0 auto 15px auto;
+    object-fit: contain;
+}
+
+/* TITLE DALAM CARD */
+.Skills h3 {
+    margin: 10px 0 12px;
+    font-size: 18px;
+    font-weight: 600;
+    text-align: center;
+}
+
+/* DESKRIPSI */
+.Skills p {
+    font-size: 14px;
+    color: #444;
+    line-height: 1.4;
+    margin: 0;
+}
+
+
+/* ====== SECTION PROJECT BACKGROUND ====== */
+section.Project {
+    background: #e5f7fa; 
+    padding: 150px ;
+    display: flex;
+    justify-content: center;
+    font-family: Arial, sans-serif;
+    border-radius: 10px;
+
+}
+
+.Project > div {
+    width: 90%;
+    max-width: 1200px;
+    text-align: center; /* semua teks jadi center */
+    border-radius: 10px;
+}
+
+
+.Project h2 {
+    background-color: #005fa3;
+    margin: 50px;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 5px;
+    text-align: center;
+}
+
+/* ====== WRAPPER UNTUK CARD ====== */
+.Project > div > div {
+    display: flex;
+    justify-content: center; /* card berada di tengah */
+    align-items: center;
+    gap: 40px;
+    flex-wrap: nowrap;
+    border-radius: 10px;
+}
+
+/* ====== CARD ====== */
+.Project > div > div > div {
+    background: #0077cc; 
+    width: 400px;
+    height: 280px;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 0px 0px 40px rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    text-align: center; /* isi card center */
+    
+}
+
+.Project > div > div > div:hover {
+    transform: translateY(-6px);
+    box-shadow: 0px 0px 60px rgba(0, 0, 0, 0.35);
+}
+
+/* ====== JUDUL PROJECT ====== */
+.Project h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #cfd7ff;
+    margin: 10px 0;
+    background-color: #005fa3;
+    text-align: center;
+}
+
+/* SECTION EXPERIENCE */
+#Experience {
+    background-color: #ffffff;
+    margin: 250px;
+    color: #ffffff;
+    border-radius: 10px;
+    padding: 30px;
+    text-align: center;
+    justify-content: center;
+}
+#Experience h3 {
+    font-size: 20px;
+    font-weight: bold;
+    color: #ffffff;
+    margin: 30px 0;
+    background-color: #005fa3;
+    border-radius: 10px;
+}
+#Experience h2 {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 10px;
+    background-color: #005fa3;
+    color: #e5f7fa;
+    text-align: center;
+    justify-content: center;
+    border-radius: 20px;
+    padding: 5px;
+}
+
+/* Container utama */
+.experience-container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+/* Card */
+.experience-card {
+    background: #1c72af;
+    width: 40vh;
+    padding: 20px;
+    border-radius: 20px;
+    box-shadow: 0 8px 16px rgba(255, 255, 255, 0.15);
+    text-align: center;
+    transition: 0.3s;
+}
+
+.experience-card:hover {
+    transform: translateY(-5px);
+}
+
+/* Image styling */
+.experience-card img {
+    width: 80%;
+    border-radius: 10px;
+    display: block;
+    margin: auto;
+    margin-bottom: 15px;
+    background: white;
+    padding: 10px;
+}
+
+/* Judul */
+.experience-card h3 {
+    font-size: 22px;
+    margin: 10px 0;
+    color: #ffffff;
+}
+
+.experience-card h4 {
+    font-size: 18px;
+    margin-bottom: 15px;
+    color: #ffffff;
+}
+
+/* List */
+.experience-card ul {
+    color: white;
+    text-align: left;
+}
+
+/* CONTACT */
+.Contact form {
+    max-width: 500px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.Contact input, .Contact textarea {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    font-size: 16px;
+}
+
+.Contact button {
+    padding: 12px;
+    background-color: #0077cc;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.Contact button:hover {
+    background-color: #005fa3;
+}
+
+/* FOOTER */
+footer {
+    background-color:  #005fa3;
+    color: #fff;
+    padding: 1vh 30px;
+    text-align: center;
+    border-radius: 10xp;
+}
+
+footer a img {
+    margin: 0 10px;
+    vertical-align: middle;
+}
+
+footer p {
+    margin-bottom: 0px;
+    border-radius: 10xp;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .About {
+        flex-direction: column;
+    }
+
+    .Skills div > div, .Project div > div {
+        flex-direction: column;
+        align-items: center;
+    }
+}
